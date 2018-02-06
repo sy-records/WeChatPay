@@ -8,7 +8,7 @@ $appid=''; //小程序 appid
 $openid= $_POST['id']; //微信用户的openid
 $mch_id=''; //微信支付商户支付号
 $key=''; //Api 密钥
-$out_trade_no = $mch_id. time();
+$out_trade_no = date('YmdHis').rand(100,999);
 $total_fee = $_POST['fee'];
 if(empty($total_fee)) //押金
 {

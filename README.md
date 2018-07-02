@@ -5,7 +5,7 @@
 作者：[沈唁](https://qq52o.me)  
 作者博客：[https://qq52o.me](https://qq52o.me)  
 开源协议：[GPL v3](https://opensource.org/licenses/GPL-3.0)  
-GitHub项目地址：[https://github.com/sy-records/WeixinPay](https://github.com/sy-records/WeixinPay)  
+GitHub项目地址：[https://github.com/sy-records/WeChatPay](https://github.com/sy-records/WeChatPay)  
 版权归作者所有，任何人不得未经授权修改版权，二次开发请遵守开源协议  
 版权所有，侵权必究  
 

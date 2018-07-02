@@ -47,7 +47,7 @@ notify.php   扫码支付及公众号支付的异步回调通知
 # 若对您有帮助，可以赞助并支持下作者哦，谢谢！
 
 <p align="center">
-    <img src="https://qq52o.me/wp-content/themes/c7v5/img/zanzhu.jpg" width="500px"></br>
+    <img src="http://wx3.sinaimg.cn/mw690/0060lm7Tly1fsv8nvbc0qj30m80hq425.jpg" width="500px"></br>
     <span style="color: #ff0000;">左边是支付宝赞助 右边是微信赞助</span>
     <p align="center">联系邮箱：52o@qq52o.cn</p>
 </p>

@@ -10,6 +10,7 @@ GitHub项目地址：[https://github.com/sy-records/WeChatPay](https://github.co
 版权所有，侵权必究  
 
 PHP文件搞定支付宝支付系列请移步：https://github.com/sy-records/Alipay  
+ThinkPHP集成系列请移步：https://github.com/sy-records/thinkphp-syz  
 
 # 环境依赖
 

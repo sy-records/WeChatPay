@@ -12,7 +12,7 @@ class WeixinPay {
     protected $out_trade_no;
     protected $body;
     protected $total_fee;
-            function __construct($appid, $openid, $mch_id, $key,$out_trade_no,$body,$total_fee) {
+    function __construct($appid, $openid, $mch_id, $key,$out_trade_no,$body,$total_fee) {
         $this->appid = $appid;
         $this->openid = $openid;
         $this->mch_id = $mch_id;

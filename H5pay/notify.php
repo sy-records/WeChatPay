@@ -1,5 +1,6 @@
 <?php
-$postXml = file_get_contents("php://input"); //接收微信参数 
+$postXml = $GLOBALS["HTTP_RAW_POST_DATA"]; //接收微信参数 
+// $postXml = file_get_contents("php://input"); 
 // 接受不到参数可以使用 file_get_contents("php://input"); PHP 高版本中$GLOBALS 好像已经被废弃了
 if (empty($postXml)) {
     return false;
@@ -19,8 +20,8 @@ function xmlToArray($xml) {
 }
 
 $attr = xmlToArray($postXml);
-file_put_contents('./log.txt',$attr);
-$total_fee = $attr[total_fee];
+//file_put_contents('./log.txt',$attr); //打印数据
+$total_fee = $attr[total_fee]; //总金额
 $open_id = $attr[openid];
 $out_trade_no = $attr[out_trade_no];
 $time = $attr[time_end];

@@ -24,10 +24,10 @@ function xmlToArray($xml) {
 
 $attr = xmlToArray($postXml);
 
-$total_fee = $attr[total_fee];
-$open_id = $attr[openid];
-$out_trade_no = $attr[out_trade_no];
-$time = $attr[time_end];
+$total_fee = $attr['total_fee'];
+$open_id = $attr['openid'];
+$out_trade_no = $attr['out_trade_no'];
+$time = $attr['time_end'];
 
 echo exit('<xml><return_code><![CDATA[SUCCESS]]></return_code><return_msg><![CDATA[OK]]></return_msg></xml>'); 
 //在微信的异步通知后，也需要给微信服务器，返回一个信息，只不过微信的所有数据格式都是 xml 的，所以我们在返回一个数据给微信即可。

@@ -94,7 +94,7 @@ class WeixinPay {
     
     //数组转换成 xml
     private function arrayToXml($arr) {
-        $xml = "";
+        $xml = "<xml>";
         foreach ($arr as $key => $val) {
             if (is_array($val)) {
                 $xml .= "<" . $key . ">" . arrayToXml($val) . "</" . $key . ">";
@@ -102,27 +102,17 @@ class WeixinPay {
                 $xml .= "<" . $key . ">" . $val . "</" . $key . ">";
             }
         }
-        $xml .= "";
+        $xml .= "</xml>";
         return $xml;
     }
 
 
     //xml 转换成数组
     private function xmlToArray($xml) {
-
-
         //禁止引用外部 xml 实体 
-
-
         libxml_disable_entity_loader(true);
-
-
         $xmlstring = simplexml_load_string($xml, 'SimpleXMLElement', LIBXML_NOCDATA);
-
-
         $val = json_decode(json_encode($xmlstring), true);
-
-
         return $val;
     }
 
@@ -175,12 +165,10 @@ class WeixinPay {
             }
             $buff .= $k . "=" . $v . "&";
         }
-        $reqPar;
+        $reqPar = '';
         if (strlen($buff) > 0) {
             $reqPar = substr($buff, 0, strlen($buff) - 1);
         }
         return $reqPar;
     }
-
-
 }

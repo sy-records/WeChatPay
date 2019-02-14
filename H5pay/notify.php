@@ -25,3 +25,6 @@ $total_fee = $attr['total_fee']; //总金额
 $open_id = $attr['openid'];
 $out_trade_no = $attr['out_trade_no'];
 $time = $attr['time_end'];
+
+// 处理逻辑 如果成功返回信息
+echo exit('<xml><return_code><![CDATA[SUCCESS]]></return_code><return_msg><![CDATA[OK]]></return_msg></xml>'); 
